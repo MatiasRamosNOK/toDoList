@@ -4,7 +4,7 @@
 
 #contenido{
     background-color: #f7f7f7;
-    width:60%;
+    width:90%;
     margin:6% auto;
     border:2px solid gray;
     -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -47,6 +47,7 @@ li {
     line-height: 40px;
     color: #666;
     vertical-align:middle;
+    overflow:auto;
 }
 
 li:nth-child(even) {
@@ -69,7 +70,10 @@ input:focus {
 
 .fa-arrows-v {
     vertical-align:middle;
-    float: right;
+}
+
+#contenedor{
+    float:right;
 }
 
 .fa-check-circle{

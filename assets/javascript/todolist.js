@@ -24,10 +24,13 @@ $("input[type='text']").keypress(function(event){
   });
 
   // Añadir el efecto de tachado a los items completados
+  /*
   $("ul").on("click", "li", function(){
     $(this).toggleClass("completado")
   });
+  */
   // Borrar los items completados
+
   $("ul").on("click", ".spanLeft", function(event){
     $(this).parent().fadeOut(500, function(){
       $(this).remove();
@@ -40,13 +43,14 @@ $("input[type='text']").keypress(function(event){
     $("li").slideToggle();
    })
 
+   
    $("ul").on("click", ".spanRight", function(event){
     $(this).parent().on("click", function(){
     $(this).toggleClass("completado")
     });
-    event.stopPropagation();
   });  
 
+  
   $(".fa-check-circle").on("click", function(event){
     $(this).parent().on("click", function(){
         $(this).toggleClass("completado")
