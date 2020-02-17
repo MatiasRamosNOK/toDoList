@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+#contenido{
+    background-color: #f7f7f7;
+    width:60%;
+    margin:6% auto;
+    border:2px solid gray;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #59C173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+    background-color: #2980b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.completado {
+     text-decoration: line-through;
+     color: gray;
+}
+
+li {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    vertical-align:middle;
+}
+
+li:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+input {
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    border: none;
+}
+
+input:focus {
+    background-color: #fff;
+    outline: none;
+    border: 3px solid #2980b9;
+}
+
+.fa-arrows-v {
+    vertical-align:middle;
+    float: right;
+}
+
+.fa-check-circle{
+    margin:0 auto;
+}
+
+.spanLeft {
+    background-color: #e74c3c;
+    color: white;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+    
+}
+
+
+.spanRight{
+    background-color: green;
+    color: white;
+    height: 40px;
+    text-align: center;
+    float: right;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+
+
+
+li:hover .spanLeft, li:hover .spanRight {
+    width: 40px;
+    opacity: 1;
+}
+
+li:hover{
+    opacity:1;
+}
